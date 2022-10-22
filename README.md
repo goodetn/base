@@ -9,7 +9,7 @@
   khoảng thời gian, kg cần save)
 ```
 1. Live Server
-2. Live Sass
+2. Live Sass Compiler (deprecated > new live sass compiler)
 ```
   Setting > search sass - live sass compile > setting
   format > Edit in setting > savePath: '/css'
