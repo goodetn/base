@@ -1,0 +1,8 @@
+@mixin text($family, $size, $weight, $color) {
+  font: {
+    family: $family;
+    size: $size;
+    weight: $weight;
+  }
+  color: $color;
+}

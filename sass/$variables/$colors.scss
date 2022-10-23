@@ -1,0 +1,21 @@
+:root {
+  // some thing like
+  --fontSize: 12px;
+
+  // colors:
+  //
+  // color
+  --darkColor: black;
+  --lightColor: white;
+  // brand color
+  --mainColor: --darkColor;
+  --secondaryColor: --lightColor;
+  //
+  // light case
+  --textLight: --darkColor;
+  --bgLight: --lightColor;
+  // dark case
+  --textDark: --lightColor;
+  --bgDark: --darkColor;
+  //
+}

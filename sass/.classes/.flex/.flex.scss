@@ -1,0 +1,35 @@
+.flex {
+  @extend %flex;
+
+  .item {
+    &.width-50-percent {
+      width: 50%;
+    }
+  }
+
+  &-direction {
+    &-row {
+      @extend %fdr;
+    }
+    &-row-reverse {
+      @extend %fdrr;
+    }
+    &-column {
+      @extend %fdc;
+    }
+    &-column-reverse {
+      @extend %fdcr;
+    }
+  }
+  &-wrap {
+    &-nowrap {
+      @extend %fwnw;
+    }
+    &-wrap {
+      @extend %fww;
+    }
+    &-wrap-reverse {
+      @extend %fwwr;
+    }
+  }
+}

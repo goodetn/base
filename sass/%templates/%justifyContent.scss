@@ -1,0 +1,20 @@
+// Requirements:
+// Import these file below first:
+// templates/_flexBaseVariable.scss
+
+// justify-content
+%jcs {
+  justify-content: $fs;
+}
+%jce {
+  justify-content: $fe;
+}
+%jcc {
+  justify-content: $c;
+}
+%jcsb {
+  justify-content: $sb;
+}
+%jcsa {
+  justify-content: $sa;
+}

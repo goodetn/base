@@ -1,0 +1,20 @@
+.align-items {
+  &-flex-start {
+    @extend %ais;
+  }
+  &-flex-end {
+    @extend %aie;
+  }
+  &-center {
+    @extend %aic;
+  }
+  &-baseline {
+    @extend %aibl;
+  }
+  &-stretch {
+    @extend %aistr;
+    .o {
+      height: auto !important;
+    }
+  }
+}

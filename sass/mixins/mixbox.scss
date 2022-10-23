@@ -1,0 +1,6 @@
+@mixin rect-center-box($size) {
+  width: $size;
+  height: $size;
+  line-height: $size;
+  text-align: center;
+}

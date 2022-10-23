@@ -1,0 +1,20 @@
+.align-content {
+  &-flex-start {
+    @extend %acs;
+  }
+  &-flex-end {
+    @extend %ace;
+  }
+  &-center {
+    @extend %acc;
+  }
+  &-space-between {
+    @extend %acsb;
+  }
+  &-space-around {
+    @extend %acsa;
+  }
+  &-stretch {
+    @extend %acstr;
+  }
+}

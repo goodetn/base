@@ -1,0 +1,17 @@
+.justify-content {
+  &-flex-start {
+    @extend %jcs;
+  }
+  &-flex-end {
+    @extend %jce;
+  }
+  &-center {
+    @extend %jcc;
+  }
+  &-space-between {
+    @extend %jcsb;
+  }
+  &-space-around {
+    @extend %jcsa;
+  }
+}
