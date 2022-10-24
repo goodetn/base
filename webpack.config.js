@@ -11,6 +11,7 @@ module.exports = {
     filename: '[name][contenthash].js',//this [name]'s depend on entry [bundle] name
     // this [contenthash] will help the caching
     clean: true,
+    assetModuleFilename: '[name][ext]',
   },
   devtool: 'source-map',
   devServer: {
@@ -37,6 +38,10 @@ module.exports = {
             presets: ['@babel/preset-env'],
           },
         },
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif|webp)$/,
+        type: 'asset/resource',
       },
     ],
   },
