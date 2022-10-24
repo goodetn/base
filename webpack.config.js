@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
   mode: 'development',
@@ -61,4 +62,10 @@ module.exports = {
       ],
     }),
   ],
+  optimization: {
+    minimize: true,
+    minimizer: [new TerserPlugin({
+      exclude: /node_modules/,
+    })],
+  },
 }
