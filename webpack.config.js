@@ -12,6 +12,7 @@ module.exports = {
     // this [contenthash] will help the caching
     clean: true,
   },
+  devtool: 'source-map',
   devServer: {
     static: {
       directory: path.resolve(__dirname, 'dist'),
