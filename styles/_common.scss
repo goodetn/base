@@ -1,10 +1,17 @@
-$primary-color: #ff0088;
-$secondary-color: #23ffab;
+$cocoaBrown: #322525;
+$buccaneer: #63342d;
+$capePalliser: #9a6449;
+$antiqueBrass: #c58d69;
+$tan: #d6ac88;
+
+$primary-color: $cocoaBrown;
+$secondary-color: $antiqueBrass;
 $box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
 $box-shadow-2: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
 
 body {
   background-color: $primary-color;
+  color: $secondary-color;
   font-family: 'Quicksand', sans-serif;
   margin: 0;
   padding: 20px;
