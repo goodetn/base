@@ -51,7 +51,15 @@ module.exports = {
       {
         test: /\.tsx?$/,
         loader: "ts-loader"
-      }
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg|webp)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
     ],
   },
   plugins: [
