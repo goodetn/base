@@ -5,4 +5,8 @@ import colorBrand from './assets/colorBrand.png';
 const colorBrandEl = document.getElementById('colorBrandEl');
 colorBrandEl.src = colorBrand;
 
-console.log(generateJokes());
+const jokeBtn = document.getElementById('jokeBtn');
+
+jokeBtn.addEventListener('click', generateJokes);
+
+generateJokes();
