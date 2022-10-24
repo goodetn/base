@@ -10,6 +10,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name][contenthash].js',//this [name]'s depend on entry [bundle] name
     // this [contenthash] will help the caching
+    clean: true,
   },
   devServer: {
     static: {
