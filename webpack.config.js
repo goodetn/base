@@ -11,6 +11,16 @@ module.exports = {
     filename: '[name][contenthash].js',//this [name]'s depend on entry [bundle] name
     // this [contenthash] will help the caching
   },
+  devServer: {
+    static: {
+      directory: path.resolve(__dirname, 'dist'),
+    },
+    port: 3000,
+    open: true,//auto open browser when npm run dev
+    hot: true,//hot reloading
+    compress: true,//allow compress
+    historyApiFallback: true,
+  },
   module: {
     rules: [
       {
