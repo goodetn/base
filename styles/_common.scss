@@ -3,15 +3,24 @@ $buccaneer: #63342d;
 $capePalliser: #9a6449;
 $antiqueBrass: #c58d69;
 $tan: #d6ac88;
+$transparentColor01: rgba(0, 0, 0, 0.1);
 
-$primary-color: $cocoaBrown;
-$secondary-color: $antiqueBrass;
-$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
-$box-shadow-2: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+// re-defined to understand easier
+$light-color: $tan;
+$closeLight-color: $antiqueBrass;
+$middle-color: $capePalliser;
+$dark-color: $cocoaBrown;
+$closeDark-color: $buccaneer;
+
+$primary-color: $dark-color;
+$secondary-color: $light-color;
+
+$box-shadow: 0 10px 20px $transparentColor01, 0 6px 6px $transparentColor01;
+$box-shadow-2: 0 5px 15px $transparentColor01, 0 6px 6px $transparentColor01;
 
 body {
-  background-color: $primary-color;
-  color: $secondary-color;
+  background-color: $dark-color;
+  color: $light-color;
   font-family: 'Quicksand', sans-serif;
   margin: 0;
   padding: 20px;
@@ -24,12 +33,13 @@ body {
 }
 
 .container {
-  background-color: $secondary-color;
+  background-color: $light-color;
+  color: $dark-color;
   border-radius: 10px;
   box-shadow: $box-shadow;
   padding: 50px 20px;
   text-align: center;
-  min-width: 100%;
+  max-width: calc(100% - 20px);
   width: 800px;
 }
 
@@ -38,7 +48,7 @@ body {
   line-height: 40px;
   letter-spacing: 1px;
   margin: 50px auto;
-  min-width: 600px;
+  max-width: 600px;
 }
 
 h3 {
