@@ -7,7 +7,7 @@ const TerserPlugin = require("terser-webpack-plugin");
 module.exports = {
   mode: 'development',
   entry: {
-    bundle: path.resolve(__dirname, 'src/index.js'),//[bundle] is a bundle's name
+    bundle: path.resolve(__dirname, 'src/index.ts'),//[bundle] is a bundle's name
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -47,6 +47,10 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif|webp)$/,
         type: 'asset/resource',
       },
+      {
+        test: /\.tsx?$/,
+        loader: "ts-loader"
+      }
     ],
   },
   plugins: [
